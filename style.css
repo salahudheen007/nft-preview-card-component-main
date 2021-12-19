@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap");
+:root {
+  --Soft_blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very_dark_blue_mainBG: hsl(217, 54%, 11%);
+  --Very_dark_blue-CardBD: hsl(216, 50%, 16%);
+  --Very_dark_blue_line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--Very_dark_blue_mainBG);
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 88%;
+  background-color: var(--Very_dark_blue-CardBD);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 26rem;
+}
+.equi{
+  position: relative;
+  cursor: pointer;
+}
+.card-img-top {
+  border-radius: 1rem;
+}
+.card-img-top:hover{
+  background-color: var(--Cyan);
+  opacity: .5
+}
+.color{
+  background-color: var(--Cyan);
+  position: absolute;
+  opacity: .5;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 1.5rem;
+  display: none;
+}
+.color:hover{
+  display: block;
+}
+.eye{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+.eye:hover{
+  display: block;
+}
+
+.card-title{
+  color: white;
+}
+.card-title:hover{
+  color: var(--Cyan);
+}
+.card-body {
+  padding: 23px 0px;
+}
+.card-text{
+  color: var(--Soft_blue);
+  margin: 18px 0px;
+}
+.value{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.price{
+  color: var(--Cyan);
+  display: flex;
+  gap: .8rem;
+}
+.date{
+  color: var(--Soft_blue);
+  display: flex;
+  gap: .8rem;
+}
+.line{
+  height: 2px;
+  width: 100%;
+  background-color: var(--Very_dark_blue_line);
+}
+.dp{
+  display: flex;
+  color: var(--Soft_blue);
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+span{
+  color: white;
+}
+span:hover{
+  color: var(--Cyan);
+}
+.dp>img{
+  width: 35px;
+  border-color: white;
+  border-width:1px;
+  border-style: solid;
+  border-radius: 50%;
+}
